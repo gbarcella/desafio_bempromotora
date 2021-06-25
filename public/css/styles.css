@@ -1,0 +1,231 @@
+:root {
+    --primary-color: #2768D7;
+    --primary-color-dark: #062654;
+    --primary-color-light: #639af7;
+    --white: #fff;
+    --black: #000;
+    --light-grey: #ededed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--light-grey);
+}
+
+/* HOME */
+
+.mini-cabecalho {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-links-mini-cabecalho {
+    margin-left: 40px;
+    padding: 15px;
+    align-self: center;
+}
+
+.container-links-mini-cabecalho a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 5px;
+    font-size: 14px;
+}
+
+.container-links-mini-cabecalho a:hover {
+    background-color: var(--white);
+    color: var(--black);
+    
+}
+
+
+.container-botao-mini-cabecalho {
+    margin-right: 40px;
+    padding: 15px;
+    align-self: center;
+}
+
+.botao-mini-cabecalho {
+    background-color: var(--white);
+    font-size: 14px;
+}
+
+.botao-mini-cabecalho:hover {
+    background-color: var(--light-grey);
+}
+
+.cabecalho-logotipo {
+    display: flex;
+    background-color: var(--white);
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-logotipo {
+    align-self: center;
+    margin-left: 40px;
+}
+
+.container-slogan {
+    align-self: center;
+    margin-right: 40px;
+}
+
+.logotipo-cabecalho {
+    height: 63px;
+    width: 200px;
+}
+
+.slogan-cabecalho {
+    font-size: 22.5px;
+    font-weight: 400;
+    margin-top: 18px;
+}
+
+.container-form-questoes {
+    display: flex;
+    max-width: 500px;
+    height: auto;
+    padding: 25px;
+    margin-top: 2%;
+    background-color: var(--white);
+}
+
+.form-questoes {
+    width: 100%;
+}
+
+.form-questoes .btn {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 14px;
+}
+
+.form-questoes .btn:hover {
+    background-color: var(--primary-color-dark);
+}
+
+/* LOGIN */
+
+.cabecalho-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--white);
+    margin: 0 auto;
+}
+
+.container-texto-cabecalho-login {
+   margin-top: 18px;
+}
+
+.texto-cabecalho-login {
+    font-size: 20px;
+}
+
+.container-form-login {
+    max-width: 400px;
+    background-color: var(--white);
+    margin-top: 50px;
+    padding: 0;
+}
+
+.container-form-login-input {
+
+    padding: 25px;
+}
+
+.botao-login {
+    background-color: var(--primary-color);
+    color: var(--white);
+    width: 100%;
+}
+
+.botao-login:hover {
+    background-color: var(--primary-color-dark);
+    color: var(--white);
+}
+
+.container-texto-cabecalho-login-form {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.text-cabecalho-login {
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.box-icone-input {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.container-link-cadastrar {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.link-cadastrar {
+    text-decoration: none;
+    color: var(--primary-color);
+
+}
+
+.link-cadastrar:hover {
+    color: var(--primary-color-dark);
+}
+
+/* Admin - Index */
+
+.navbar-admin {
+    background-color: var(--primary-color);
+}
+
+.container-respostas-admin {
+    margin-top: 2%;
+}
+
+.card-resposta {
+    min-height: max-content !important;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 600px) {
+    .slogan-cabecalho {
+      display: none;
+    }
+
+    .cabecalho-logotipo {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mini-cabecalho {
+        justify-content: center;
+        flex-direction: column-reverse;
+        
+    }
+    .container-links-mini-cabecalho {
+        margin: 0 auto;
+    }
+
+    .container-botao-mini-cabecalho {
+        margin: 0 auto;
+        padding-bottom: 0;
+    }
+}
+
